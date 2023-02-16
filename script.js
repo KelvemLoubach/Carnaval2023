@@ -8,16 +8,12 @@ let ajusteTamanho = ()=>{
 
 ajusteTamanho();
 
-
-
-
 let clickShowButton = ()=>{
 
     if(document.getElementById('no')){
         document.getElementById('no').remove();
     }
-
-       
+   
 let posicaox = Math.floor(Math.random()*alturaJanela)-120;
 let posicaoy = Math.floor(Math.random()*larguraJanela)-120;
 
@@ -28,8 +24,8 @@ console.log(posicaox,posicaoy);
 
 let buttonRandomic = document.createElement('button');
 
-buttonRandomic.className = 'btn1';
-buttonRandomic.innerHTML = 'NÃO';
+buttonRandomic.className = 'button';
+buttonRandomic.innerHTML = '<i class="fa-solid fa-x"></i>';
 buttonRandomic.style.left = posicaoy + 'px';
 buttonRandomic.style.top = posicaox + 'px';
 buttonRandomic.style.position = 'absolute';
@@ -38,7 +34,7 @@ buttonRandomic.onclick = clickShowButton;
 
 document.body.appendChild(buttonRandomic);
 
-}
+};
 
 
 
