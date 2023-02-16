@@ -14,8 +14,8 @@ let clickShowButton = ()=>{
         document.getElementById('no').remove();
     }
    
-let posicaox = Math.floor(Math.random()*alturaJanela)-120;
-let posicaoy = Math.floor(Math.random()*larguraJanela)-120;
+let posicaox = Math.floor(Math.random()*alturaJanela)-160;
+let posicaoy = Math.floor(Math.random()*larguraJanela)-160;
 
 posicaox = posicaox < 0 ? 0 : posicaox;
 posicaoy = posicaoy < 0 ? 0 : posicaoy;
