@@ -20,12 +20,10 @@ let clickShowButton = () => {
     posicaox = posicaox < 0 ? 0 : posicaox;
     posicaoy = posicaoy < 0 ? 0 : posicaoy;
 
-    console.log(posicaox, posicaoy);
-
     let buttonRandomic = document.createElement('button');
 
     buttonRandomic.className = 'button';
-    buttonRandomic.innerHTML = '<i class="fa-solid fa-x"></i>';
+    buttonRandomic.innerHTML = '<i class="fa-solid fa-x fa-flip"></i>';
     buttonRandomic.style.left = posicaoy + 'px';
     buttonRandomic.style.top = posicaox + 'px';
     buttonRandomic.style.position = 'absolute';
@@ -33,7 +31,6 @@ let clickShowButton = () => {
     buttonRandomic.onclick = clickShowButton;
 
     document.body.appendChild(buttonRandomic);
-
 };
 
 
